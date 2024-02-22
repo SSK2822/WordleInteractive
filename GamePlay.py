@@ -28,9 +28,12 @@ class GamePlay:
         # Implementation of getting user input
         return input("Enter your guess: ").strip().lower()
 
-    def printErrorMessage(self):
+    def printErrorMessage(self, guess):
         # Implementation of printing an error message
-        print(Fore.RED + "Invalid word! Please enter a 5-letter word." + Fore.RESET)
+        if len(guess) != 5:
+            print(Fore.RED + "Invalid word! Please enter a 5-letter word." + Fore.RESET)
+        else:
+            print(Fore.RED + "Invalid word! Please enter a valid word from the dictionary." + Fore.RESET)
 
     def printWinMessage(self):
         # Implementation of printing the winning message
@@ -62,7 +65,7 @@ def main():
         guess = game.getInput()
         if not game.validGuess(guess, words_list):
             count-=1
-            game.printErrorMessage()
+            game.printErrorMessage(guess)
             continue
         
         if guess == secret_word:
