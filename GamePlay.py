@@ -1,7 +1,7 @@
 # Step 2: Define the GamePlay Class
 # Function to load the list of valid words from a file
 # It should return a list of words
-def load_dictionary(file_path):
+def loadDictionary(file_path):
     # Open the file at file_path
     # Read all lines in the file
     # Strip whitespace from each word
@@ -10,26 +10,26 @@ def load_dictionary(file_path):
     # Return the list of words
 
 # Function to choose a secret word at random from the list of valid words
-def choose_secret_word(words_list):
+def chooseWord(words_list):
     # Use the random library to select a word at random
     # Return the selected word
 
 # Function to prompt the user to enter a guess
-def get_user_guess():
+def getInput():
     # Prompt the user for input
     # Return the input
 
 # Function to check if the user's guess is valid
-def valid_guess(guess, words_list):
+def validGuess(guess, words_list):
     # Check if the guess is in the words_list and is 5 characters long
     # Return True if valid, False otherwise
 
 # Function to print an error message if the guess is invalid
-def print_error_message():
+def printErrorMessage():
     # Print an appropriate message to the console
 
 # Function to check the user's guess against the secret word
-def check_guess(guess, secret_word):
+def checkGuess(guess, secret_word):
     # Create a result list with placeholders for correct letters and positions
     # Check each letter in the guess to see if it matches a letter in the secret word
     # If it matches and is in the correct position, mark it as correct (e.g., with a green background)
@@ -38,16 +38,16 @@ def check_guess(guess, secret_word):
     # Return the result list
 
 # Function to print the result of the guess
-def print_result(result):
+def printResult(result):
     # For each letter in the result, print it with the appropriate color coding
     # Use the colorama library to print letters with colored backgrounds
 
 # Function to print a winning message
-def print_win_message():
+def printWinMessage():
     # Print a congratulatory message to the console
 
 # Function to print a losing message with the secret word
-def print_lose_message(secret_word):
+def printLostMessage(secret_word):
     # Inform the user that they did not guess the word
     # Reveal the secret word to the user
 
