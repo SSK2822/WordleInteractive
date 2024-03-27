@@ -45,3 +45,5 @@
 
 8. **Losing Condition:**
    - If the player runs out of attempts, display a losing message along with the secret word.
+  
+Check out a solver for the game: https://github.com/SSK2822/wordleSolver.git
